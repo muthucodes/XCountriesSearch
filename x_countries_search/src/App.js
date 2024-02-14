@@ -34,12 +34,13 @@ function App() {
       {/* <h1>X Countries Search</h1> */}
       <div className="search">
         <input
+        type="text"
           placeholder="Search for countries..."
           value={input}
           onChange={(e) => {
             inputHandler(e);
           }}
-        ></input>
+        />
       </div>
       <div className="container">
         {!input && (countries ? (
