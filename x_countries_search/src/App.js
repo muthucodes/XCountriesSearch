@@ -13,6 +13,7 @@ function App() {
   };
 
   const filterCountry = (country, input) => {
+    input = input.toLowerCase();
     return country.name.common.toLowerCase().includes(input);
   };
   useEffect(() => {
